@@ -1,0 +1,41 @@
+name: Python Application Tests
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    # We will test against the latest stable Python 3.11
+    strategy:
+      matrix:
+        python-version: ["3.11"]
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        # Ensure our new dependencies are present for CI
+        pip install fastapi uvicorn langchain langchain-core langchain-community langchain-groq langgraph pydantic pytest sqlalchemy rank_bm25
+        
+    - name: Test with pytest
+      env:
+        # We need a dummy key so the tests don't fail on initialization
+        GROQ_API_KEY: "dummy_key_for_ci_tests"
+      run: |
+        pytest tests/ -v

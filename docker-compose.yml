@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: api.Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+
+  web:
+    build:
+      context: ./web
+      dockerfile: ../web.Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    depends_on:
+      - api
