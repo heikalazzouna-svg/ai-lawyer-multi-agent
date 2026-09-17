@@ -14,36 +14,21 @@ An Enterprise-grade LegalTech platform leveraging a state-of-the-art **Multi-Age
 ## 📸 App Previews
 
 <!-- Place your screenshots in a folder (e.g., /screenshots or /assets) and link them below -->
+<img width="880" height="900" alt="image" src="https://github.com/user-attachments/assets/42639d7c-4a94-4bc5-b74a-666ca960b1e2" />
+<img width="945" height="435" alt="image" src="https://github.com/user-attachments/assets/c444f789-953d-4271-9587-041d31417a69" />
+<img width="945" height="445" alt="image" src="https://github.com/user-attachments/assets/bb767c25-ed8a-4d7c-a555-d66994f8536e" />
+<img width="945" height="515" alt="image" src="https://github.com/user-attachments/assets/645c42cd-5063-4ba7-8a00-5b69ef9fe71e" />
+<img width="945" height="541" alt="image" src="https://github.com/user-attachments/assets/3c017f47-070c-4819-bc26-8b7a2cb778e6" />
+<img width="945" height="469" alt="image" src="https://github.com/user-attachments/assets/82c16d2c-7829-4f1e-af67-bf7b335ecaae" />
 
-<div align="center">
 
-### 🖥️ Main Dashboard & Split PDF Viewer
-*Upload contracts, review document text side-by-side, and inspect Initial Counsel legal scans.*
-<br/>
-<img src="./screenshots/dashboard_preview.png" alt="Dashboard Preview" width="850" />
 
-<br/><br/>
 
-### 🤖 Multi-Agent Reasoning & Live Token Streaming
-*Watch the Supervisor route queries to specialized agents with real-time SSE streaming and status traces.*
-<br/>
-<img src="./screenshots/agent_reasoning.png" alt="Multi-Agent Reasoning Trace" width="850" />
 
-<br/><br/>
 
-### 📑 Multi-Document Contract Comparison
-*Side-by-side comparative analysis of multiple agreements highlighting discrepancies and missing clauses.*
-<br/>
-<img src="./screenshots/contract_comparison.png" alt="Contract Comparison Mode" width="850" />
 
-<br/><br/>
 
-### 🔒 Enterprise Authentication & Verification
-*Secure JWT authentication gateway with SMTP email verification and PII anonymization.*
-<br/>
-<img src="./screenshots/auth_preview.png" alt="Authentication Gateway" width="850" />
 
-</div>
 
 ---
 
